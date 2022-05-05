@@ -3,7 +3,7 @@
 const OAuth2Strategy = require('passport-oauth2');
 const util = require('util');
 const querystring = require('querystring')
-const randomNickname = require('nodebb-plugin-sso-baiteda/passport-baiteda2/randomNickname')
+const randomNickname = require('./randomNickname')
 
 
 /**
