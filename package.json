@@ -1,28 +1,28 @@
 {
-  "name": "nodebb-plugin-sso-baiteda",
-  "version": "1.0.0",
-  "description": "NodeBB Baiteda SSO",
-  "main": "library.js",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yigo-fe/nodebb-plugin-sso-baiteda"
-  },
-  "keywords": [
-    "nodebb",
-    "plugin",
-    "sso",
-    "single sign on",
-    "registration"
-  ],
-  "license": "BSD-2-Clause",
-  "readme": "",
-  "readmeFilename": "README.md",
-  "dependencies": {
-    "passport-oauth2": "^1.6.1",
-    "util": "^0.12.4",
-    "querystring": "^0.2.1"
-  },
-  "nbbpm": {
-    "compatibility": "^1.16.0"
-  }
+	"name": "nodebb-plugin-sso-baiteda",
+	"version": "1.0.1",
+	"description": "NodeBB Baiteda SSO",
+	"main": "library.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yigo-fe/nodebb-plugin-sso-baiteda"
+	},
+	"keywords": [
+		"nodebb",
+		"plugin",
+		"sso",
+		"single sign on",
+		"registration"
+	],
+	"license": "BSD-2-Clause",
+	"readme": "",
+	"readmeFilename": "README.md",
+	"dependencies": {
+		"passport-oauth2": "^1.6.1",
+		"util": "^0.12.4",
+		"querystring": "^0.2.1"
+	},
+	"nbbpm": {
+		"compatibility": "^1.16.0"
+	}
 }
