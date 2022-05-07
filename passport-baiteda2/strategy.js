@@ -166,11 +166,13 @@ Strategy.prototype.userProfile = function (
 		profile.id = json.data.user_base_info.user_id;
 		profile.mobile = json.data.mobile;
 		profile.name = randomNickname()
-		profile.tenant = json.data.tenant_list
-
-		if (json.email) {
-			profile.email = json.email;
+		profile.tenant = json.data.tenant_list.reduce((prev, cur, index) => {
+			return prev + cur.tenant_name + (index === json.data.tenant_list.length - 1 ? '' : '，')
+		}, '')
+		if (profile.tenant) {
+			profile.email = '@' + profile.tenant;
 		}
+
 
 		return profile;
 	};

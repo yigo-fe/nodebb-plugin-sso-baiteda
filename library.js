@@ -103,6 +103,7 @@
 
 			if (uid) {
 				// Existing User
+				User.setUserField(uid, 'email', email)
 				callback(null, {
 					uid: uid
 				})
