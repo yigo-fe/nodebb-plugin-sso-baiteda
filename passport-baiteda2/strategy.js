@@ -170,7 +170,7 @@ Strategy.prototype.userProfile = function (
 			return prev + cur.tenant_name + (index === json.data.tenant_list.length - 1 ? '' : '，')
 		}, '')
 		if (profile.tenant) {
-			profile.email = '@' + profile.tenant;
+			profile.email = profile.id + '@' + profile.tenant;
 		}
 
 

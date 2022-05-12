@@ -1,6 +1,6 @@
 {
 	"name": "nodebb-plugin-sso-baiteda",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "NodeBB Baiteda SSO",
 	"main": "library.js",
 	"repository": {
