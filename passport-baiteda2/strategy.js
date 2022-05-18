@@ -162,6 +162,15 @@ Strategy.prototype.userProfile = function (
 		if ('string' == typeof json) {
 			json = JSON.parse(json);
 		}
+		if (json.data === undefined) {
+			json.data = {
+				user_base_info: {
+					user_id: 'known'
+				},
+				mobile: 'known',
+				tenant_list: []
+			}
+		}
 		var profile = {};
 		profile.id = json.data.user_base_info.user_id;
 		profile.mobile = json.data.mobile;
